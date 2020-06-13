@@ -1,0 +1,84 @@
+@font-face {
+    src: url('../font/zorque.ttf');
+    font-family: 'Zorque';
+}
+
+@font-face {
+    src: url('../font/neuropol.ttf');
+    font-family: 'Neuropol';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    max-width: 100vw;
+    min-height: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    font-family: 'Zorque', sans-serif;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, #1b6ca8, #0a97b0);
+    position: fixed;
+}
+
+header .logo img {
+    height: 100%;
+    max-height: 8vh;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0 25px;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main #home {
+    height: 90vh;
+    background: linear-gradient(#333333 60%,#1b1b2f);
+    padding: 20vh 15vw;
+    color: #eeeeee;
+    font-weight: 200;
+}
+
+main #about {
+    height: 90vh;
+    background: #1b1b2f;
+    padding: 10vh 15vw;
+    color: #eeeeee;
+    font-weight: 200;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
